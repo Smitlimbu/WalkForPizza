@@ -1,1 +1,11 @@
-print("Loaded main.server.lua")
+-- Services
+local ServerScriptService: ServerScriptService = game:GetService("ServerScriptService")
+
+-- Folders
+local modules: Folder = ServerScriptService:WaitForChild("modules")
+
+-- Require
+require(modules:WaitForChild("leaderstats_manager"))
+
+-- Log
+warn("[Server] All modules loaded successfully!")

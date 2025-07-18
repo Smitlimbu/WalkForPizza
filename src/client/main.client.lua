@@ -1,1 +1,2 @@
-print("Loaded main.client.lua")
+-- Log
+warn("[Client] All modules loaded successfully!")

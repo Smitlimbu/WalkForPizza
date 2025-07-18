@@ -1,14 +1,29 @@
 # [0.1.0] - 7/17/2025
 
 ## Added
-- Added biomes: Grass, Sand, Ice, Wood, Brick, and Cobblestone  
+- Biomes: Grass, Sand, Ice, Wood, Brick, and Cobblestone  
 - Set up initial project code structure and naming conventions  
-- Created README.txt and CHANGELOG.txt
-
-## Fixed
-- Empty
+- README.md and CHANGELOG.md
 
 ## Changed
-- Empty
+- None
+
+## Fixed
+- None
+
+---------------------------------------------------------------------------
+
+# [0.1.1] - 7/18/2025
+
+## Added
+- Final biome: Marble  
+- Logs for debugging  
+- leaderstats_manager for leaderstats
+
+## Changed
+- Updated main.server.lua and main.client.lua
+
+## Fixed
+- None
 
 ---------------------------------------------------------------------------
