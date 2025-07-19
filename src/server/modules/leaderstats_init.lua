@@ -17,6 +17,6 @@ end
 Players.PlayerAdded:Connect(onPlayerAdded)
 
 -- Log
-warn("[Module] Loaded leaderstats_manager")
+warn("[Module] Loaded leaderstats_init")
 
 return {}

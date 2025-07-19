@@ -27,3 +27,15 @@
 - None
 
 ---------------------------------------------------------------------------
+
+# [0.1.2] - 7/19/2025
+
+## Added
+- studs_server.lua and studs_client.lua modules for distance tracking
+
+## Changed
+- Renamed leaderstats_manager.lua to leaderstats_init.lua
+- Updated main.server.lua and main.client.lua
+
+## Fixed
+- None

@@ -5,7 +5,8 @@ local ServerScriptService: ServerScriptService = game:GetService("ServerScriptSe
 local modules: Folder = ServerScriptService:WaitForChild("modules")
 
 -- Require
-require(modules:WaitForChild("leaderstats_manager"))
+require(modules:WaitForChild("leaderstats_init"))
+require(modules:WaitForChild("studs_server"))
 
 -- Log
 warn("[Server] All modules loaded successfully!")
