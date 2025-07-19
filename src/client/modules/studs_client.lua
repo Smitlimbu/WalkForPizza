@@ -1,13 +1,12 @@
 -- Services
 local Players: Players = game:GetService("Players")
-local RunService: RunService = game:GetService("RunService")
 local ReplicatedStorage: ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Workspace: Workspace = game:GetService("Workspace")
 
 -- Folders
 local remotes: Folder = ReplicatedStorage:WaitForChild("Remotes")
 
--- Player Objects
+-- Player objects
 local player: Player = Players.LocalPlayer
 local character: Model = player.Character or player.CharacterAdded:Wait()
 local humanoid: Humanoid = character:WaitForChild("Humanoid")
@@ -32,12 +31,18 @@ local function onCharacterAdded(newCharacter)
     hrp = character:WaitForChild("HumanoidRootPart")
 end
 
--- Everyframe
-RunService.Heartbeat:Connect(function()
-    if humanoid.MoveDirection.Magnitude > 0 then
-        local studs = getStuds()
+-- Main loop
+task.spawn(function()
+    while true do
+        task.wait(0.25)
 
-        walked:FireServer(studs)
+        if humanoid.MoveDirection.Magnitude > 0 then
+            local studs = getStuds()
+
+            if studs < 0 then continue end
+
+            walked:FireServer(studs)
+        end
     end
 end)
 

@@ -1,7 +1,6 @@
 # Game Overview
 
-- Walk 157,696 Studs for a Pizza! 🍕 is a Roblox game where players walk  
-   157,696 studs just to get their pizza
+- Walk 157,696 Studs to Meet TungTung Sahur is a Roblox game where players walk 157,696 studs just to meet famous brainrot TungTung Sahur 
 
 ---------------------------------------------------------------------------
 
@@ -28,6 +27,6 @@
 
 - The total length of the game is 157,696 studs
 - Each biome has 11 blocks, each 2,048 studs long, making each biome 22,528 studs  
-- There will be a total of 7 biomes
+- There are 7 biomes in total
 
 ---------------------------------------------------------------------------
