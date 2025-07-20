@@ -55,3 +55,17 @@
 - Filtered out negative distance values before sending updates
 
 ---------------------------------------------------------------------------
+
+# [0.1.4] 
+
+## Added
+- Speed leaderstats
+- speed_manager for handeling increment of speed
+
+## Changed
+- Removed baseplate from default.project.json
+
+## Fixed
+- None
+
+---------------------------------------------------------------------------

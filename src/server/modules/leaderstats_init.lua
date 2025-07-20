@@ -11,6 +11,11 @@ local function onPlayerAdded(player)
     studs.Name = "Studs"
     studs.Value = 0
     studs.Parent = leaderstats
+
+    local speed: number = Instance.new("NumberValue")
+    speed.Name = "Speed"
+    speed.Value = 16
+    speed.Parent = leaderstats
 end
 
 -- Events
