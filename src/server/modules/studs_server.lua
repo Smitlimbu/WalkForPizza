@@ -9,7 +9,10 @@ local walked: RemoteEvent = remotes:WaitForChild("Walked")
 
 -- Events
 walked.OnServerEvent:Connect(function(player, studs)
-    player.leaderstats.Studs.Value = studs
+    local leaderstats: Folder = player:WaitForChild("leaderstats")
+    local Studs: IntValue = leaderstats:WaitForChild("Studs")
+
+    Studs.Value = studs
 end)
 
 -- Log

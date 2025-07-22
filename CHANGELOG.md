@@ -1,71 +1,107 @@
-# [0.1.0] - 7/17/2025
+# Changelog
 
-## Added
-- Biomes: Grass, Sand, Ice, Wood, Brick, and Cobblestone  
-- Initial project code structure and naming conventions  
-- README.md and CHANGELOG.md files
+## [1.0.0] - 2025-07-22
 
-## Changed
+### Added
+- `clicker_server.lua` and `clicker_client.lua` to handle player clicks on server and client.
+- New modules in `main.server.lua` and `main.client.lua`.
+- "Removed" section introduced to track deleted files.
+
+### Changed
+- Speed system now increases by clicking, not automatically every second.
+- README.md updated to explain new gameplay.
+
+### Removed
+- `speed_manager.lua` no longer needed.
+
+### Fixed
 - None
 
-## Fixed
+---
+
+## [0.1.4] - 2025-07-20
+
+### Added
+- `speed_manager.lua` for automatic speed increases.
+- New module in `main.server.lua`.
+- Speed tracking in leaderstats.
+
+### Changed
 - None
 
----------------------------------------------------------------------------
+### Removed
+- Baseplate removed from `default.project.json` to clean workspace.
 
-# [0.1.1] - 7/18/2025
-
-## Added
-- Final biome: Marble  
-- Debug logging  
-- leaderstats_manager module for leaderstats handling
-
-## Changed
-- Updated main.server.lua and main.client.lua
-
-## Fixed
+### Fixed
 - None
 
----------------------------------------------------------------------------
+---
 
-# [0.1.2] - 7/19/2025
+## [0.1.3] - 2025-07-19
 
-## Added
-- studs_server.lua and studs_client.lua modules for distance tracking
-
-## Changed
-- Renamed leaderstats_manager.lua to leaderstats_init.lua  
-- Updated main.server.lua and main.client.lua
-
-## Fixed
+### Added
 - None
 
----------------------------------------------------------------------------
+### Changed
+- Project renamed from "Walk 157,696 studs for a pizza" to "Walk 157,696 Studs to Meet TungTung Sahur".
+- Replaced `RunService.Heartbeat` with `while` loop to cut updates by 93%, improving performance.
 
-# [0.1.3] - 7/19/2025
-
-## Added
+### Removed
 - None
 
-## Changed
-- Renamed project from "Walk 157,696 studs for a pizza" to "Walk 157,696 Studs to Meet TungTung Sahur"  
-- Replaced RunService.Heartbeat with a while loop, reducing calls by 93%
+### Fixed
+- Fixed negative distance values sent to players.
 
-## Fixed
-- Filtered out negative distance values before sending updates
+---
 
----------------------------------------------------------------------------
+## [0.1.2] - 2025-07-19
 
-# [0.1.4] 
+### Added
+- `studs_server.lua` and `studs_client.lua` to track walking distance.
+- New modules in `main.server.lua` and `main.client.lua`.
 
-## Added
-- Speed leaderstats
-- speed_manager for handeling increment of speed
+### Changed
+- `leaderstats_manager.lua` renamed to `leaderstats_init.lua`.
 
-## Changed
-- Removed baseplate from default.project.json
-
-## Fixed
+### Removed
 - None
 
----------------------------------------------------------------------------
+### Fixed
+- None
+
+---
+
+## [0.1.1] - 2025-07-18
+
+### Added
+- Final biome: marble.
+- Logging.
+- `leaderstats_manager.lua` for player stats.
+- New modules in `main.server.lua`.
+
+### Changed
+- Updated `main.server.lua` and `main.client.lua` with new features.
+
+### Removed
+- None
+
+### Fixed
+- None
+
+---
+
+## [0.1.0] - 2025-07-17
+
+### Added
+- Biomes: grass, sand, ice, wood, brick, cobblestone.
+- Initial project structure and naming.
+- `README.md` and `CHANGELOG.md`.
+
+### Changed
+- None
+
+### Removed
+- None
+
+### Fixed
+- None

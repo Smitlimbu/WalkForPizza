@@ -12,9 +12,9 @@ local function onPlayerAdded(player)
     studs.Value = 0
     studs.Parent = leaderstats
 
-    local speed: number = Instance.new("NumberValue")
+    local speed: IntValue = Instance.new("IntValue")
     speed.Name = "Speed"
-    speed.Value = 16
+    speed.Value = 0
     speed.Parent = leaderstats
 end
 
