@@ -50,6 +50,6 @@ end)
 player.CharacterAdded:Connect(onCharacterAdded)
 
 -- Log
-warn("[Module] Loaded studs_client")
+warn("[Module] Loaded - studs_client")
 
 return {}

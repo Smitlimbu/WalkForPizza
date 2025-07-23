@@ -16,6 +16,6 @@ walked.OnServerEvent:Connect(function(player, studs)
 end)
 
 -- Log
-warn("[Module] Loaded studs_server")
+warn("[Module] Loaded - studs_server")
 
 return {}

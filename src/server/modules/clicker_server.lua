@@ -9,7 +9,7 @@ local remotes: Folder = ReplicatedStorage:WaitForChild("Remotes")
 local clicked: RemoteEvent = remotes:WaitForChild("Clicked")
 
 -- Constants
-local SPEED_RATE: number = 0.1
+local SPEED_RATE: number = 0.05
 local STAT_RATE: number = 1
 local BASE_SPEED: number = 5
 
@@ -40,6 +40,6 @@ Players.PlayerAdded:Connect(function(player)
 end)
 
 -- Log
-warn("[Module] Loaded clicker_server")
+warn("[Module] Loaded - clicker_server")
 
 return {}

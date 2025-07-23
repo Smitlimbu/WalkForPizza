@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.1.0]
+
+### Added
+- Play a click sound when clicked.
+- Visual effects when clicked.
+- `milestone_class.lua` and `milestone_init.lua` for handling milestones and awarding badges upon reaching milestones.
+- `welcome_badge.lua` module for awarding the Welcome badge on the first play of the game.
+
+### Changed
+- Log structures.
+
+### Removed
+- None.
+
+### Fixed
+- None.
+
+---
+
 ## [1.0.0] - 2025-07-22
 
 ### Added
