@@ -1,15 +1,13 @@
 # Changelog
 
-## [1.1.0]
+## [1.1.1]
 
 ### Added
-- Play a click sound when clicked.
-- Visual effects when clicked.
-- `milestone_class.lua` and `milestone_init.lua` for handling milestones and awarding badges upon reaching milestones.
-- `welcome_badge.lua` module for awarding the Welcome badge on the first play of the game.
+- `Assets` folder.
+- `badge_utils.lua` for badge utility functions.
 
 ### Changed
-- Log structures.
+- Replaced repeated badge logic with `badge_utils.lua`.
 
 ### Removed
 - None.
@@ -19,108 +17,127 @@
 
 ---
 
-## [1.0.0] - 2025-07-22
+## [1.1.0] - 2025-07-24
 
 ### Added
-- `clicker_server.lua` and `clicker_client.lua` to handle player clicks on server and client.
-- New modules in `main.server.lua` and `main.client.lua`.
-- "Removed" section introduced to track deleted files.
+- Click sound effect when clicked.
+- Visual feedback when clicked.
+- `milestone_class.lua` and `milestone_init.lua` for handling milestones and awarding badges.
+- `welcome_badge.lua` for awarding the Welcome badge on the player's first session.
 
 ### Changed
-- Speed system now increases by clicking, not automatically every second.
-- README.md updated to explain new gameplay.
+- Improved log structure.
 
 ### Removed
-- `speed_manager.lua` no longer needed.
+- None.
 
 ### Fixed
-- None
+- None.
 
 ---
 
-## [0.1.4] - 2025-07-20
+## [1.0.0] – 2025-07-22
 
 ### Added
-- `speed_manager.lua` for automatic speed increases.
-- New module in `main.server.lua`.
-- Speed tracking in leaderstats.
+- `clicker_server.lua` and `clicker_client.lua` for handling clicks on the server and client.
+- New modules integrated into `main.server.lua` and `main.client.lua`.
+- "Removed" section added to track deleted files.
 
 ### Changed
-- None
+- Speed now increases by clicking instead of incrementing automatically every second.
+- `README.md` updated to reflect new gameplay mechanics.
 
 ### Removed
-- Baseplate removed from `default.project.json` to clean workspace.
+- `speed_manager.lua` deprecated and removed.
 
 ### Fixed
-- None
+- None.
 
 ---
 
-## [0.1.3] - 2025-07-19
+## [0.1.4] – 2025-07-20
 
 ### Added
-- None
+- `speed_manager.lua` for automatic speed increments.
+- New module added to `main.server.lua`.
+- Speed tracking via leaderstats.
 
 ### Changed
-- Project renamed from "Walk 157,696 studs for a pizza" to "Walk 157,696 Studs to Meet TungTung Sahur".
-- Replaced `RunService.Heartbeat` with `while` loop to cut updates by 93%, improving performance.
+- None.
 
 ### Removed
-- None
+- Baseplate removed from `default.project.json` for a cleaner workspace.
 
 ### Fixed
-- Fixed negative distance values sent to players.
+- None.
 
 ---
 
-## [0.1.2] - 2025-07-19
+## [0.1.3] – 2025-07-19
 
 ### Added
-- `studs_server.lua` and `studs_client.lua` to track walking distance.
-- New modules in `main.server.lua` and `main.client.lua`.
+- None.
 
 ### Changed
-- `leaderstats_manager.lua` renamed to `leaderstats_init.lua`.
+- Project renamed from **"Walk 157,696 Studs for a Pizza"** to **"Walk 157,696 Studs to Meet TungTung Sahur"**.
+- Replaced `RunService.Heartbeat` with a `while` loop to reduce update load by 93% and improve performance.
 
 ### Removed
-- None
+- None.
 
 ### Fixed
-- None
+- Fixed negative distance values being sent to players.
 
 ---
 
-## [0.1.1] - 2025-07-18
+## [0.1.2] – 2025-07-19
 
 ### Added
-- Final biome: marble.
-- Logging.
-- `leaderstats_manager.lua` for player stats.
-- New modules in `main.server.lua`.
+- `studs_server.lua` and `studs_client.lua` for tracking walking distance.
+- New modules added to `main.server.lua` and `main.client.lua`.
 
 ### Changed
-- Updated `main.server.lua` and `main.client.lua` with new features.
+- Renamed `leaderstats_manager.lua` to `leaderstats_init.lua`.
 
 ### Removed
-- None
+- None.
 
 ### Fixed
-- None
+- None.
 
 ---
 
-## [0.1.0] - 2025-07-17
+## [0.1.1] – 2025-07-18
 
 ### Added
-- Biomes: grass, sand, ice, wood, brick, cobblestone.
-- Initial project structure and naming.
-- `README.md` and `CHANGELOG.md`.
+- Final biome: Marble.
+- Logging system.
+- `leaderstats_manager.lua` for player stat tracking.
+- New modules added to `main.server.lua`.
 
 ### Changed
-- None
+- Updated `main.server.lua` and `main.client.lua` to support new features.
 
 ### Removed
-- None
+- None.
 
 ### Fixed
-- None
+- None.
+
+---
+
+## [0.1.0] – 2025-07-17
+
+### Added
+- Biomes: Grass, Sand, Ice, Wood, Brick, Cobblestone.
+- Initial project structure and file naming conventions.
+- `README.md` and `CHANGELOG.md` files.
+
+### Changed
+- None.
+
+### Removed
+- None.
+
+### Fixed
+- None.
